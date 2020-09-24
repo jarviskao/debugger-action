@@ -1,8 +1,7 @@
-name: Ubuntu
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: SSH connection to Actions
-      uses: jarviskao/debugger-action@master
+- name: Hello Action
+  # You may pin to the exact commit or the version.
+  # uses: wxdlong/hello-action@3dc69a523f937b57d06445e71f237b19565fb830
+  uses: wxdlong/hello-action@v7
+  with:
+    # who to greet
+    who-to-greet: # default is wxdlong
