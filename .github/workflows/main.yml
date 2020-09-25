@@ -3,6 +3,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    services:
+      ports: 8096:8096
     steps:
     - name: Setup tmate session
       uses: csexton/debugger-action@master
